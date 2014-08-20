@@ -5,12 +5,31 @@ body {
   color:#eeeeee;  
 }
 
+footer {
+  margin-bottom:200px;
+  text-align:center;
+}
+
 footer ul li {
   width: 100px;
   display: inline-block;
 }
 
-ui-state-disabled{
-  width: 100px;
+nav {
+  text-align:center;
+}
+
+nav ul li{
+  width:100px;
   display: inline-block;
+}
+
+
+
+a {
+  color:gray;
+}
+
+a:hover {
+  color:white;
 }
