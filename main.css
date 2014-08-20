@@ -42,7 +42,9 @@ nav ul li{
   display: inline-block;
 }
 
-
+.section-title {
+  margin-bottom: 100px;
+}
 
 a {
   color:gray;
