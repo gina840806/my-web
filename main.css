@@ -4,3 +4,13 @@ body {
   background-color:black;
   color:#eeeeee;  
 }
+
+footer ul li {
+  width: 100px;
+  display: inline-block;
+}
+
+ui-state-disabled{
+  width: 100px;
+  display: inline-block;
+}
