@@ -2,19 +2,41 @@
 <html>
 <head lang="zh-TW">
   <meta charset="utf-8">
-  <title>忍者龜</title>
+  <title>玩命關頭6</title>
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script>
+  $(function() {
+    $( "#menu" ).menu();
+  });
+  </script>
 </head>
 <body>  
+  <ul id="menu">
+  <li class="ui-state-disabled">Aberdeen</li>
+  <li>精彩影片</li>
+  <li>電影劇照</li>
+  <li>故事介紹</li>
+  <li>角色介紹
+    <ul>
+      <li class="ui-state-disabled">Ada</li>
+      <li>Saarland</li>
+      <li>Salzburg an der schönen Donau</li>
+    </ul>
+  </li>
+</ul>
+  
   <div class="container">
     <section class="title">
-      <img src="film_title.png">
-      <h2 class="time">8月8日 3D震撼登場</h2>
+      <h2 class="time">5月22日 震撼登場</h2>
     </section>
     <section class="vedio">
       <h3 class="section-title">最新預告</h3>
-      <iframe width="640" height="360" src="//www.youtube.com/embed/96gGWkkUhEo?list=PLPCb6qD6nQhAZmq8QQTP_z_o7JbmHwECq" frameborder="0" allowfullscreen></iframe>
+      
     </section>
     <section class="story">
       <h3 class="section-title">故事介紹</h3>
