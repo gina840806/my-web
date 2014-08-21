@@ -5,6 +5,15 @@ body {
   color:#eeeeee;  
 }
 
+.picture {
+  text-align:center;
+}
+
+.menu {
+  width:1440px;
+  text-align:center;
+}
+
 .container {
   width:650px;
   margin:0 auto;
