@@ -14,6 +14,31 @@
     $( "#menu" ).menu();
   });
   </script>
+  <script>
+  $(function() {
+    $( "#dialog" ).dialog({
+	  width:683,
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+ 
+    $( "#phto" ).click(function() {
+      $( "#dialog" ).dialog( "open" );
+    });
+  });
+  </script>
+  <script>
+   $(function() {
+    $( "#dialog" ).tabs();
+   });
+  </script>
 </head>
 <body> 
 
@@ -29,7 +54,7 @@
 	  <li><a href="#a5">Luke Hobbs</a></li>
     </ul>
   </li>
-  <li><a href="#view_images " title="電影劇照">電影劇照</a></li>
+  <li id="phto"><a href="#view_images " title="電影劇照">電影劇照</a></li>
 </ul>
 </nav>
 <img src="1.jpg">
@@ -79,23 +104,21 @@
 	  <h3>本名:Dwayne Johnson</h3>
 	  <p>美國外交安全處 (DSS)的探員，為了對抗棘手的歐文蕭團隊，求助於唐老大，並以特赦其人等為條件。最後伊蓮娜與其前往唐老大的美國洛城1327老家找唐老大，並宣告唐老大等人已經獲得特赦。</p>
     </section>
-	<div>
-	<li class="view-modal" id="view_images" style="display: list-item;">
-	 <ul class="fullscreen-gallery">
-	   <li class="selected" style="display: list-item;">
-         <img src="gallery01.jpg" alt style="width: 136px; height: 76px; left: 0px;">
-       </li>
-       <li style="display: none;">
-         <img src="gallery02.jpg" alt style="width: 1366px; height: 768px; left: 0px;">
-       </li>
-       <li style="display: none;">
-         <img src="gallery03.jpg" alt style="width: 1366px; height: 768px; left: 0px;">
-       </li>
-       <li style="display: none;">
-         <img src="gallery04.jpg" alt style="width: 1366px; height: 768px; left: 0px;">
-       </li>
-	 </ul>
-	</li>
+	<div id="dialog">
+	 <ul>
+      <li><a href="#tabs-1">1</a></li>
+      <li><a href="#tabs-2">2</a></li>
+      <li><a href="#tabs-3">3</a></li>
+     </ul>
+     <div id="tabs-1">
+       <img src="gallery01.jpg" alt style="width: 683px; height: 384px; left: 0px;">
+     </div>
+     <div id="tabs-2">
+       <img src="gallery02.jpg" alt style="width: 683px; height: 384px; left: 0px;">
+     </div>
+     <div id="tabs-3">
+       <img src="gallery03.jpg" alt style="width: 683px; height: 384px; left: 0px;">
+     </div>
 	</div>
     <footer>
       <ul>
