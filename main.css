@@ -20,21 +20,20 @@ body {
   text-align:center;
 }
 section {
-  margin-bottom:60px;
+  margin-bottom:100px;
 }
 
 footer {
-  margin-bottom:200px;
+  
   text-align:center;
 }
 
 footer ul li {
-  width: 100px;
+  width: 200px;
   display: inline-block;
 }
 
 nav {
-  width:100;
   text-align:center;
 }
 
@@ -53,4 +52,15 @@ a {
 
 a:hover {
   color:white;
+}
+
+.gotop {
+  display: none;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;    
+  padding: 10px 15px;    
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
 }

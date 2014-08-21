@@ -33,10 +33,28 @@
     });
   });
   </script>
+  
   <script>
   $(function() {
     $( "#dialog" ).tabs();
   });
+  </script>
+  
+  <script>
+    $(function(){
+     $("#gotop").click(function(){
+        jQuery("html,body").animate({
+            scrollTop:0
+        },1000);
+     });
+     $(window).scroll(function() {
+        if ( $(this).scrollTop() > 0){
+            $('#gotop').fadeIn("fast");
+        } else {
+            $('#gotop').stop().fadeOut("fast");
+        }
+    });
+   });
   </script>
 </head>
 <body> 
@@ -147,13 +165,17 @@
        <img src="gallery10.jpg" alt style="width: 683px; height: 384px; left: 0px;">
      </div>
 	</div>
-    <footer>
-      <ul>
-        <li><a href="#0">網站聲明</a></li>
-        <li><a href="#0">使用條款</a></li>
-        <li><a href="#0">隱私權政策</a></li>
-      </ul>
-    </footer>
+    
+  </div>
+  <footer>
+    <ul>
+      <li><a href="http://www.universalpictures.com/legal/index.html" target="_blank">使用條款</a></li>
+      <li><a href="http://www.nbcuni.com/privacy/" target="_blank">隱私權政策</a></li>
+      <li><a href="http://www.nbcuni.com/privacy/cookies/" target="_blank">COOKIE POLICY</a></li>
+    </ul>
+  </footer>
+  <div class="gotop" id="gotop">
+   <img src="photo.jpg" style="width: 50px; height: 50px;">
   </div>
 </body>
 </html>
